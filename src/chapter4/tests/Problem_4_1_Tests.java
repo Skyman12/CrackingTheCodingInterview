@@ -1,7 +1,6 @@
-package chapter1.tests;
+package chapter4.tests;
 
-import chapter1.solutions.Problem_1_1;
-import chapter4.Problem_4_1;
+import chapter4.problems.Problem_4_1;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 

@@ -63,8 +63,10 @@ public class Problem1_IdenticalIntegerArraysTests {
     public void testSolution3() {
         Integer[] arr1 = new Integer[]{12, 1, 14, 16, 1, 1, 12 ,4};
         Integer[] arr2 = new Integer[]{14, 12, 1, 1, 12, 4, 1, 16};
-        Integer[] arr3 = new Integer[]{1,2,3,4};
+
+        Integer[] arr3 = new Integer[]{14, 12, 1, 12, 12, 4, 1, 16};
         Integer[] arr4 = new Integer[]{1, 1, 1, 1};
+
         Integer[] arr5 = new Integer[]{};
         Integer[] arr6 = new Integer[]{};
 
@@ -76,7 +78,7 @@ public class Problem1_IdenticalIntegerArraysTests {
         assertFalse(solution.solution3(arr1, arr3));
         assertFalse(solution.solution3(arr1, arr4));
         assertFalse(solution.solution3(arr1, arr5));
-        assertFalse(solution.solution3(arr5, arr1));
-        assertFalse(solution.solution3(arr3, arr4));
+        assertFalse(solution.solution3(null, arr1));
+        assertFalse(solution.solution3(arr1, null));
     }
 }

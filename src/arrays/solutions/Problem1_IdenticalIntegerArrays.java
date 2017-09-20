@@ -2,10 +2,9 @@ package arrays.solutions;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
 
 /**
- * Created by bskaja on 9/16/17.
+ *
  *
  */
 public class Problem1_IdenticalIntegerArrays {
@@ -77,13 +76,11 @@ public class Problem1_IdenticalIntegerArrays {
    * @return true if the arrays contain identical contents. False otherwise.
    */
   public boolean solution3(Integer[] arr1, Integer[] arr2) {
-    // If the objects point to the same reference (or are both null)
+
     if (arr1 == arr2) return true;
 
-    // If either one is null
     if (arr1 == null || arr2 == null) return false;
 
-    // Different length arrays cant be the same
     if (arr1.length != arr2.length) return false;
 
     HashMap<Integer, Integer> map = new HashMap<>();
